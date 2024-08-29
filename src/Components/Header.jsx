@@ -1,15 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link'
 
 const Header = () => {
   return (
     <nav>
           <h1>techistar</h1>
           <main>
-            <Link to={"/"}>Home</Link>
+            <HashLink to={"/#home"}>Home</HashLink>
             <Link to={"/Contact"}>Contact</Link>
-            <Link to={"/#About"}>About</Link>
-            <Link to={"/#Brands"}>Brands</Link>
+            <HashLink to={"/#about"}>About</HashLink>
+            <HashLink to={"/#brands"}>Brands</HashLink>
             <Link to={"/Services"}>Services</Link>
             
           </main>
